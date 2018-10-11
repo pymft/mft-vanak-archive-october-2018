@@ -40,7 +40,7 @@ set1 = {1, 2, 3, 4, 1, 1}
 set2 = {1, 2, 3, 4}
 
 1 in set1   # True
-
+100 in set2   # False
 
 
 
