@@ -4,8 +4,14 @@ data = [[1539865800,6439.77,6441.91,6441.91,6439.78,36.50304995999999],[15398649
 f = lambda x: abs(x[2] - x[1])
 data.sort(key=f)
 res = data[-10:]
-for r in res:
-    print(r, f(r))
+
+f_res = lambda r: (r[0], r[2] - r[1], r[-1]/(r[2]-r[1]))
+res_final = [f_res(r) for r in res]
+
+for r in res_final:
+    print(r)
+# for r in res:
+#     print(r, f(r))
 # top 10 , max market cap
 
 # difference / market cap
