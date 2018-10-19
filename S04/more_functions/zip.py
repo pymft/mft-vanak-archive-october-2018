@@ -6,5 +6,8 @@ print(lst_zip)
 out = zip(lst1, lst2)
 print(list(out))
 
+tup1 = (1, 2, 3)
+x, y, z = tup1
+
 for x, y in zip(lst1, lst2):
     print(x, y)
