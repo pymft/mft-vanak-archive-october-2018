@@ -1,5 +1,6 @@
-import math
+from math import *
 
-print(math.sqrt(4))
-print(math.pow(2, 10))
+print(sqrt(4))
+print(pow(2, 10))
+print(tan(10))
 
