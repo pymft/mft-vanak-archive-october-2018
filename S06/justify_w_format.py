@@ -10,7 +10,7 @@ print(text)
 text = "x{num:<30}x".format(num=10)
 print(text)
 # center justify
-text = "x{num:*^30}x".format(num=10)
+text = "x{num:*^{width}}x".format(num=10, width=30)
 print(text)
 
 #  precision
