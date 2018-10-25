@@ -29,11 +29,21 @@ value = 20
 # print("my integer%-20.4fx" % var)   # my integer10.2700             x
 # print("my integer%20.1fx" % var)    # my integer                10.3x
 
-#  scientific numbers
-var = 0.00000000000345345
-print("my integer %ex" % var)
-print("my integer %20ex" % var)
-print("my integer %-20ex" % var)
-print("my integer %-20.4ex" % var)
-print("my integer %20.1ex" % var)
+# #  scientific numbers
+# var = 0.00000000000345345
+# print("my integer %ex" % var)
+# print("my integer %20ex" % var)
+# print("my integer %-20ex" % var)
+# print("my integer %-20.4ex" % var)
+# print("my integer %20.1ex" % var)
+
+# print("value = %-50s ." % range)
+
+#  floats
+var = 10.27
+print("my integer  %f %%" % var)        # my integer10.270000x
+print("my integer  %20f %%" % var)     # my integer           10.270000x
+print("my integer  %-20f %%" % var)     # my integer10.2700             x
+print("my integer  %-20.4f %%" % var)   # my integer10.2700             x
+print("my integer  %20.1f %%" % var)    # my integer                10.3x
 
