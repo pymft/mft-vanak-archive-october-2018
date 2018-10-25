@@ -1,7 +1,8 @@
 #
-pat = "{0}*{0}"
+pat = "{s:>{h}}*{s:<{h}}"
 
-for i in range(8):
+h = 30
+for i in range(h+1):
     text = "*" * i
-    print(pat.format(text))
+    print(pat.format(s=text, h=h))
 
