@@ -21,11 +21,19 @@ value = 20
 # print("my integer%10d." % num2)   # right justified
 #
 
-#  floats
-var = 10.27
-print("my integer%fx" % var)        # my integer10.270000x
-print("my integer%20fx" % var)     # my integer           10.270000x
-print("my integer%-20fx" % var)     # my integer10.2700             x
-print("my integer%-20.4fx" % var)   # my integer10.2700             x
-print("my integer%20.1fx" % var)    # my integer                10.3x
+# #  floats
+# var = 10.27
+# print("my integer%fx" % var)        # my integer10.270000x
+# print("my integer%20fx" % var)     # my integer           10.270000x
+# print("my integer%-20fx" % var)     # my integer10.2700             x
+# print("my integer%-20.4fx" % var)   # my integer10.2700             x
+# print("my integer%20.1fx" % var)    # my integer                10.3x
+
+#  scientific numbers
+var = 0.00000000000345345
+print("my integer %ex" % var)
+print("my integer %20ex" % var)
+print("my integer %-20ex" % var)
+print("my integer %-20.4ex" % var)
+print("my integer %20.1ex" % var)
 
