@@ -1,10 +1,13 @@
+import re
 import urllib.request
 
-url = "http://www.python.org"
+url = ""
 
 with urllib.request.urlopen(url) as req:
     text = req.read()
+    text = text.decode('utf-8')
 
 
-print(type(text))
-print(text)
+pat = r"\"mailto:(.*)\""
+res = re.findall(pat, text)
+print(res)
