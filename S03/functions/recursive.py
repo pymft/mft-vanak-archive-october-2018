@@ -1,4 +1,6 @@
 def fact(n):
+    if not type(n) == int:
+        raise ValueError
     if n == 0:
         return 1
     else:
@@ -13,6 +15,6 @@ def fib(n):
     else:
         return fib(n-1) + fib(n-2)
 
-# print(fact(10))
-for i in range(10):
-    print(fib(i))
+print(fact(10.1))
+# for i in range(10):
+#     print(fib(i))

@@ -10,6 +10,8 @@ def combination(n, m):
     res = fact(n) / (fact(m) * fact(n-m))
     return res
 
+
+
 res = combination(3, 1)
 
 for i in range(5):
