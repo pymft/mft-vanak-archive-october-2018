@@ -7,4 +7,4 @@ def division(a, b):
         print("Finally")
 
 
-print(division(1,2))
+print(division(1, 2))
