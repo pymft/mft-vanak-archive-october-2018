@@ -1,20 +1,22 @@
-"""
+
 class FileInstance:
     def __init__(self, fname):
-        pass
+        self.path = fname
+        self.f = None
+
+
+    def __enter__(self):
+        self.f = open(self.path, 'w')
+        return self
 
     def add(self, s):
-        pass
+        self.f.write('\n' + s)
 
-    def pop(self):
-        return
-
-
-
-f = FileInstance('./input.txt')
-f.add('my text goes here')
-f.pop() -> str
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.f.close()
 
 
 
-"""
+with FileInstance('./input.txt') as s:
+    s.add("hello")
+
