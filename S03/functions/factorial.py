@@ -1,4 +1,6 @@
 def fact(n):
+    if not isinstance(n, int):
+        raise TypeError
     res = 1
     while n > 0:
         res = res * n
