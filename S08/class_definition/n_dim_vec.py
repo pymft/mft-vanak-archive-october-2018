@@ -18,11 +18,29 @@ class Vector:
         return str(self.dim)
 
 
-v1 = Vector(3, 4, 10, 20)
-print(v1)
-v2 = v1 * 2
-print(v2)
-v3 = v2 + v1  # v2.__add__(v1)
-print(v3)
-print(v2.length())
+class Vector2D(Vector):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        super().__init__(self.x, self.y)
+
+
+
+v_new = Vector2D(10, 20)
+print(v_new.length())
+print(v_new.x, v_new.y, v_new.dim)
+print(v_new)
+
+
+
+# v1 = Vector(3, 4, 10, 20)
+# print(v1)
+# v2 = v1 * 2
+# print(v2)
+# # Vector.__add__(v1, v2)
+# # v1.__add__(v2)
+# # v1 + v2
+# v3 = v2 + v1  # v2.__add__(v1)
+# print(v3)
+# print(v2.length())
 
