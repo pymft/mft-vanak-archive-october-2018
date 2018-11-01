@@ -7,7 +7,7 @@ obj = {'name': NAME, 'age': AGE}
                | y : float        |
                +------------------+
     method:    | mul(k) -> Vector |
-               |                  |
+               | length() -> float|
                +------------------+
 
 f(obj)
