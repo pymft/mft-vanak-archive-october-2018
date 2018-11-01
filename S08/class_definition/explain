@@ -1,0 +1,32 @@
+obj = {'name': NAME, 'age': AGE}
+
+               +------------------+
+    name:      | Vector           |
+               +------------------+
+    attributes:| x : float        |
+               | y : float        |
+               +------------------+
+    method:    | mul(k) -> Vector |
+               |                  |
+               +------------------+
+
+f(obj)
+    alter obj
+    return values
+
+# functional
+vec = (20, 40)
+mul_2(vec)  -> (40, 80)
+mul(vec, k) -> (20*k, 40*k)
+
+# object oriented approach
+vec = Vector(20, 40)  ---> instantiate
+vec.x
+vec.y
+vec.mul(2)
+
+
+o -> instance
+f(o)
+o.f()
+
