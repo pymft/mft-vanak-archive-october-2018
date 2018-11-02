@@ -1,17 +1,20 @@
+# DRY: Don't Repeat Yourself
+
 class Vector:
     instance = []
 
     def __init__(self, x, y):
-
         self.__x = x
         self.__y = y
-
         self.__length = (x ** 2 + y ** 2) ** 0.5
 
     def __repr__(self):
         out = "||<{}, {}>|| -> {} : {}".format(
             self.x, self.y, self.length)
         return out
+
+    def __reset_length(self):
+        self.__length = (self.x ** 2 + self.y ** 2) ** 0.5
 
     @property
     def x(self):
@@ -20,16 +23,16 @@ class Vector:
     @x.setter
     def x(self, value):
         self.__x = value
-        self.__length = (self.x ** 2 + self.y ** 2) ** 0.5
+        self.__reset_length()
 
     @property
     def y(self):
         return self.__y
 
-    @x.setter
-    def x(self, value):
+    @y.setter
+    def y(self, value):
         self.__y = value
-        self.__length = (self.x ** 2 + self.y ** 2) ** 0.5
+        self.__reset_length()
 
     @property
     def length(self):
