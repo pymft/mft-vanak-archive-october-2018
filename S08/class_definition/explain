@@ -1,5 +1,8 @@
 obj = {'name': NAME, 'age': AGE}
 
+# Class diagram
+# UML : Unified Modeling Language
+
                +------------------+
     name:      | Vector           |
                +------------------+
