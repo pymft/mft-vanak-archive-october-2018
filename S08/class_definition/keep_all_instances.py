@@ -6,8 +6,9 @@ class Whatever:
         if name in names:
             raise Exception
         self.name = name
+        # <instance var> <-class-var-->
+        # self.instances = self.instances + [self]
         self.instances.append(self)
-
 
 # v = Whatever()
 # print(Whatever.instances)
