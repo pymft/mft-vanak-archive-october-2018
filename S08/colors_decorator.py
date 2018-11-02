@@ -17,7 +17,7 @@ class Color:
         return inner
 
 
-@Color('blue')
+@Color('yellow', 'r')
 def echo(s):
     return s
 
