@@ -1,4 +1,5 @@
 #  Dump
+import pickle
 
 dct = {
     'firstname': 'John',
@@ -6,6 +7,5 @@ dct = {
 }
 
 
-with open('values.txt', 'w') as f:
-    text = str(dct)
-    f.write(text)
+with open('data.p', 'wb') as f:
+    pickle.dump(dct, f)

@@ -5,7 +5,6 @@ class Person:
         self.name = name
         self.age = age
 
-
     def say_something(self):
         print("{} says something".format(self.name))
 
