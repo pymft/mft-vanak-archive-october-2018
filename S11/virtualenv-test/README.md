@@ -31,3 +31,7 @@ source path/to/activate
 ```commandline
 deactivate 
 ```
+
+
+
+### Also check `virtualenvwrapper ` 
