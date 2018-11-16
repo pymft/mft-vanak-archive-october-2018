@@ -19,8 +19,8 @@ all networks:  `0.0.0.0`
 * `addr:port/`
 * `addr:port/login`
 * `addr:port/user` 
-* `addr:port/user?vahid`
-* `addr:port/user?vee`
+* `addr:port/user/vahid`
+* `addr:port/user/vee`
 
 
 
